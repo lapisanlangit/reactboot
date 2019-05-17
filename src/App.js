@@ -1,7 +1,8 @@
 
 import React, { Component } from 'react'
 import Header from './cockpit/Header'
-import Footer from './cockpit/Footer'
+import Sidebar from './cockpit/Sidebar';
+import Content from './cockpit/Content';
 
 
 
@@ -19,8 +20,10 @@ export default class App extends Component {
 
       <div className="container-scroller">
         <Header />
-        <Footer />
-
+        <div className="container-fluid page-body-wrapper">
+          <Sidebar />
+          <Content />
+        </div>
       </div>
     )
   }
