@@ -1,10 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from './node_modules/react';
 
 class Content extends Component {
     render() {
         return (
-
-
             <div class="main-panel">
                 <div class="content-wrapper">
                     <div class="row mb-4">

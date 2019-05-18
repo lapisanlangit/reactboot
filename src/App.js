@@ -1,8 +1,9 @@
 
 import React, { Component } from 'react'
-import Header from './cockpit/Header'
-import Sidebar from './cockpit/Sidebar';
-import Content from './cockpit/Content';
+import Header from './Cockpit/Header'
+import Sidebar from './Cockpit/Sidebar';
+import Content from './Cockpit/Content';
+
 
 
 
