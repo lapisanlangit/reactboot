@@ -1,13 +1,11 @@
 
 import React, { Component } from 'react'
-import Header from './Cockpit/Header'
-import Sidebar from './Cockpit/Sidebar';
-import Content from './Cockpit/Content';
+import Header from './Layout/Header'
+// import Sidebar from './Cockpit/Sidebar';
+// import Content from './Cockpit/Content';
+//  import Satu from './Empat/satu';
 
-
-
-
-export default class App extends Component {
+class App extends Component {
 
   constructor() {
     super()
@@ -20,14 +18,15 @@ export default class App extends Component {
     return (
 
       <div className="container-scroller">
+      
         <Header />
-        <div className="container-fluid page-body-wrapper">
+        {/* <div className="container-fluid page-body-wrapper">
           <Sidebar />
           <Content />
-        </div>
+        </div> */}
       </div>
     )
   }
 }
 
-
+export default App;
