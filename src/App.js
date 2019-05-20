@@ -1,29 +1,28 @@
 
 import React, { Component } from 'react'
 import Header from './Layout/Header'
-// import Sidebar from './Cockpit/Sidebar';
-// import Content from './Cockpit/Content';
-//  import Satu from './Empat/satu';
+import Sidebar from './Layout/Sidebar';
+import Content from './Layout/Content';
+import Satker from './Component/Satker/Satker';
+ 
 
 class App extends Component {
 
   constructor() {
     super()
 
+   
   }
-
-
   render() {
-
     return (
 
       <div className="container-scroller">
-      
         <Header />
-        {/* <div className="container-fluid page-body-wrapper">
+        <div className="container-fluid page-body-wrapper">
           <Sidebar />
-          <Content />
-        </div> */}
+          <Satker/>
+          {/* <Content /> */}
+        </div>
       </div>
     )
   }
