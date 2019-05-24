@@ -3,7 +3,9 @@ import React, { Component } from 'react'
 import Header from './Layout/Header'
 import Sidebar from './Layout/Sidebar';
 import Content from './Layout/Content';
-import Satker from './Component/Satker/Satker';
+
+
+
  
 
 class App extends Component {
@@ -20,8 +22,7 @@ class App extends Component {
         <Header />
         <div className="container-fluid page-body-wrapper">
           <Sidebar />
-          <Satker/>
-          {/* <Content /> */}
+          <Content />
         </div>
       </div>
     )

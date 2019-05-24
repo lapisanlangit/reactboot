@@ -20,11 +20,11 @@ class SatkerList extends Component {
         }
         return (
             <div class="main-panel">
-            <div class="content-wrapper">
-              <div class="row">
-                <div class="col-12 grid-margin">
-                  <div class="card">
-                    <div class="card-body">
+                <div class="content-wrapper">
+                    <div class="row">
+                        <div class="col-12 grid-margin">
+                            <div class="card">
+                                <div class="card-body">
                                     <h4 className="card-title">Referensi Satker</h4>
 
                                     <div className="table-responsive">

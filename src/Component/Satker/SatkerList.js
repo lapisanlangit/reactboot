@@ -19,41 +19,52 @@ class SatkerList extends Component {
 
         }
         return (
-            <div class="main-panel">
-                <div class="content-wrapper">
-                
-                    <div class="row">
-        
-                        <div className="col-lg-12">
-                            <div className="card">
-                                <div className="card-body">
-                                    <h4 className="card-title">Referensi Satker</h4>
 
-                                    <div className="table-responsive">
-                                        <table className="table table-striped">
-                                            <thead>
-                                                <tr>
-                                                    <th>
-                                                        Kode
-                                        </th>
-                                                    <th>
-                                                        Nama Satker
-                                     </th>
 
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                {satkerList}
-                                            </tbody>
-                                        </table>
+            <div class="row">
+
+                <div className="col-lg-12">
+                    <div className="card">
+                        <div className="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h4 class="card-title mb-0">Referensi Satker</h4>
+                                <div class="btn-toolbar mb-0 d-none d-sm-block" role="toolbar" aria-label="Toolbar with button groups">
+                                    <div class="btn-group" role="group" aria-label="First group">
+                                        <button type="button" class="btn btn-success">
+                                            <i class="mdi mdi-plus-circle"></i> Add
+                        </button>
                                     </div>
+
+
                                 </div>
                             </div>
-                        </div>
 
+                            <div className="table-responsive">
+                                <table className="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                Kode
+                                        </th>
+                                            <th>
+                                                Nama Satker
+                                     </th>
+                                            <th>
+                                                Aksi
+                                         </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {satkerList}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
+
         );
     }
 }
