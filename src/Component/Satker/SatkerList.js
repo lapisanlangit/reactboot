@@ -7,6 +7,10 @@ class SatkerList extends Component {
         super()
     }
 
+    tambahData(){
+        this.props.ontambahData()
+    }
+
     render() {
         let satkerList;
         if (this.props.satkerList) {
@@ -15,14 +19,9 @@ class SatkerList extends Component {
                     <SatkerItem key={satker.kdsatker} satker={satker} />
                 )
             })
-
-
         }
         return (
-
-
             <div class="row">
-
                 <div className="col-lg-12">
                     <div className="card">
                         <div className="card-body">
@@ -30,7 +29,7 @@ class SatkerList extends Component {
                                 <h4 class="card-title mb-0">Referensi Satker</h4>
                                 <div class="btn-toolbar mb-0 d-none d-sm-block" role="toolbar" aria-label="Toolbar with button groups">
                                     <div class="btn-group" role="group" aria-label="First group">
-                                        <button type="button" class="btn btn-success">
+                                        <button type="button" class="btn btn-success" onClick={this.tambahData.bind(this)}>
                                             <i class="mdi mdi-plus-circle"></i> Add
                         </button>
                                     </div>

@@ -17,8 +17,6 @@ class SatkerItem extends Component {
                         <button type="button" class="btn btn-danger btn-sm">Hapus</button>
                     </div>
                 </td>
-
-
             </tr>
 
 
