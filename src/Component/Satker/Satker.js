@@ -41,7 +41,7 @@ class Satker extends Component {
         return (
             <div>
                 <SatkerList  satkerList={this.state.satkers} ontambahData={this.handleSimpanData.bind(this)}/>
-                <Addsatker/>
+      
             </div>
         );
     }

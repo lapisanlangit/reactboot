@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Addsatker extends Component {
     render() {
         return (
-            <div class="modal" tabindex="-1" role="dialog">
+            <div class="modal" id="ctnRekam" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">

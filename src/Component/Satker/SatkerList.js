@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import SatkerItem from './SatkerItem';
+import Addsatker from './Addsatker';
+
+import $ from 'jquery';
+
 
 class SatkerList extends Component {
 
@@ -7,8 +11,19 @@ class SatkerList extends Component {
         super()
     }
 
-    tambahData(){
-        this.props.ontambahData()
+    tambahData() {
+        // alert(1)
+        // // this.props.ontambahData()
+        // $('#ctnRekam').modal();
+
+
+    }
+
+    componentDidMount(){
+        $('button').on('click',function(){
+            // alert('test Button')
+            $('#ctnRekam').modal('show');
+        })
     }
 
     render() {
@@ -33,6 +48,7 @@ class SatkerList extends Component {
                                             <i class="mdi mdi-plus-circle"></i> Add
                         </button>
                                     </div>
+                                    <button>Test Button</button>
 
 
                                 </div>
@@ -62,7 +78,28 @@ class SatkerList extends Component {
                     </div>
                 </div>
 
+                <Addsatker/>
+                {/* <div class="modal" id="ctnRekam" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Modal body text goes here.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> */}
             </div>
+
 
         );
     }
