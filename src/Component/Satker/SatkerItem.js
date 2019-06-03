@@ -1,8 +1,19 @@
 import React, { Component } from 'react';
 
 class SatkerItem extends Component {
-    render() {
 
+
+    constructor(props) {
+        super(props);
+
+
+        this.onUbahData = this.onUbahData.bind(this);
+
+    }
+    onUbahData(nilai) {
+        this.props.onUbahData(nilai)
+    }
+    render() {
         return (
             <tr>
                 <td>
@@ -12,14 +23,12 @@ class SatkerItem extends Component {
                     {this.props.satker.nmsatker}
                 </td>
                 <td>
-                    <div class="template-demo">
-                        <button type="button" class="btn btn-primary btn-sm">Ubah</button>
-                        <button type="button" class="btn btn-danger btn-sm">Hapus</button>
+                    <div className="template-demo">
+                        <button type="button" className="btn btn-primary btn-sm" onClick={this.onUbahData}>Ubah</button>
+                        <button type="button" className="btn btn-danger btn-sm">Hapus</button>
                     </div>
                 </td>
             </tr>
-
-
         );
     }
 }
